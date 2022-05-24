@@ -7,9 +7,9 @@ function submitForm(ev) {
      if (email.value === "" || password.value === "") {
     return alert("Bсі поля повинні бути заповнені.");
   }
-    console.log(email.value, password.value);
+    console.log(`email: ${ email.value } password: ${ password.value }`);
     ev.currentTarget.reset();
- //const formData = new FormData(ev.currentTarget)
+//  const formData = new FormData(ev.currentTarget)
 }
 form.addEventListener("submit",submitForm)
 
