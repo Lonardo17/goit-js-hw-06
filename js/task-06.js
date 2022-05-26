@@ -3,5 +3,9 @@ const value = input.dataset.length
 input.addEventListener("blur", (event) => {
     if (event.currentTarget.value.length > value) {
         input.classList.add("invalid")
-    }else input.classList.add("valid")
+        input.classList.remove("valid")
+    } else {
+        input.classList.add("valid")
+        input.classList.remove("invalid")
+    }
 })

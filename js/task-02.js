@@ -21,6 +21,7 @@ const newArray = ingredients.map(el => {
   return list
 })
 const ul = document.querySelector("#ingredients");
-newArray.map(el => ul.append(el));
+// newArray.map(el => ul.append(el));
+ul.append(...newArray)
 
 
